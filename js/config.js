@@ -107,9 +107,9 @@ const CONFIG = {
   // Fill in your project URL and publishable anon key when ready.
   // The website functions fully as a static site if these are empty.
   supabase: {
-    enabled: false, // Set to true after adding valid credentials
-    url: "",        // e.g. "https://your-project.supabase.co"
-    anonKey: "",    // Public publishable key only (never service_role)
+    enabled: true, // Set to true after adding valid credentials
+    url: "https://jmzgjkcslppynudfkbsl.supabase.co",
+    anonKey: "sb_publishable_jbJIqZyVD7WYAQSxSyzZ0A_uCVf4Gs2",
     tableName: "leads",
     storage: {
       enabled: false,
