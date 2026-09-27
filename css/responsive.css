@@ -1,0 +1,277 @@
+/* ==========================================================================
+   ServeLinkAI - Responsive Layouts & Breakpoint Rules
+   Ensures seamless experience from mobile smartphones to ultra-wide screens
+   ========================================================================== */
+
+/* --- 1. Tablet & Small Laptop (max-width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .hero-section {
+    padding-top: calc(var(--header-height) + 24px);
+    padding-bottom: 72px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-reassurance {
+    justify-content: center;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .problem-grid,
+  .solutions-grid,
+  .why-us-grid,
+  .use-case-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .industries-grid,
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 28px;
+  }
+
+  .pricing-card.popular-card {
+    transform: none;
+  }
+
+  .demo-dual-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .demo-chat-column {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+}
+
+/* --- 2. Mobile Drawer & Navigation (max-width: 860px) --- */
+@media screen and (max-width: 860px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 82%;
+    max-width: 360px;
+    height: 100vh;
+    background-color: var(--bg-card);
+    border-left: 1px solid var(--border-subtle);
+    padding: 96px 32px 48px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.6);
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-cta-wrap {
+    width: 100%;
+  }
+
+  .nav-cta-wrap .btn {
+    width: 100%;
+  }
+
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* --- 3. Mobile Smartphone (max-width: 640px) --- */
+@media screen and (max-width: 640px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .benefit-grid,
+  .problem-grid,
+  .how-it-works-grid,
+  .solutions-grid,
+  .industries-grid,
+  .why-us-grid,
+  .use-case-grid,
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.col-span-2 {
+    grid-column: span 1;
+  }
+
+  .form-wrapper {
+    padding: 24px 18px;
+  }
+
+  .contact-info-card {
+    padding: 24px 18px;
+  }
+
+  .legal-content {
+    padding: 24px 18px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .demo-messages {
+    max-height: 320px;
+    padding: 16px;
+  }
+
+  .demo-chips {
+    padding: 12px 16px;
+  }
+
+  .demo-chip {
+    width: 100%;
+    text-align: left;
+  }
+}
