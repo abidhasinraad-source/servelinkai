@@ -1,0 +1,141 @@
+/**
+ * ServeLinkAI - Central Configuration File
+ * 
+ * Edit this file to update agency details, pricing, social media links,
+ * and integration credentials (Supabase, Voiceflow, Make.com).
+ * 
+ * IMPORTANT SECURITY NOTE:
+ * Only use public/publishable API keys here (e.g. Supabase anon/publishable key).
+ * NEVER expose secret keys, service_role keys, or private webhook tokens in client-side code.
+ */
+
+const CONFIG = {
+  // Agency & Brand Details
+  agency: {
+    name: "ServeLinkAI",
+    tagline: "AI Automation for Home-Service Businesses",
+    positioning: "Capture, qualify, and manage customer enquiries automatically.",
+    primaryService: "AI Website Receptionist",
+    canonicalDomain: "https://www.servelinkai.com",
+    contactEmail: "hello@servelinkai.com", // [Editable Placeholder]
+    phonePlaceholder: "+1 (555) 019-2834", // [Editable Placeholder]
+    operatingHours: "24/7 Automation Support",
+    logoPath: "assets/images/servelinkai-logo.png",
+    socialLinks: {
+      linkedin: "https://linkedin.com/company/servelinkai", // [Editable Placeholder]
+      twitter: "https://x.com/servelinkai",                 // [Editable Placeholder]
+      github: "",
+      facebook: ""
+    }
+  },
+
+  // Pricing Packages (One-Time Setup + Optional Monthly Maintenance)
+  pricing: {
+    currencySymbol: "£",
+    packages: [
+      {
+        id: "starter",
+        name: "Starter",
+        badge: "Essential Launch",
+        setupPrice: "£XXX",
+        setupDescription: "One-time setup fee",
+        maintenancePrice: "£XX / mo",
+        maintenanceNote: "Optional monthly maintenance & hosting",
+        description: "Ideal for solo operators and small trade businesses wanting 24/7 automated enquiry capture.",
+        popular: false,
+        features: [
+          "AI Website Receptionist",
+          "FAQ & Business Knowledge Configuration",
+          "Basic Lead Capture (Name, Phone, Email, Location)",
+          "Google Sheets / Supabase Lead Collection",
+          "Instant Email Lead Notification",
+          "Standard Human Handoff Instructions",
+          "Basic Launch Support (14 Days)"
+        ],
+        ctaText: "Choose Starter",
+        ctaHref: "contact.html?package=starter"
+      },
+      {
+        id: "growth",
+        name: "Growth",
+        badge: "MOST POPULAR",
+        setupPrice: "£XXX",
+        setupDescription: "One-time setup fee",
+        maintenancePrice: "£XX / mo",
+        maintenanceNote: "Optional monthly optimization & maintenance",
+        description: "Built for busy home-service contractors needing smart triage, urgency detection, and job routing.",
+        popular: true,
+        features: [
+          "Everything in Starter",
+          "Advanced Lead Qualification & Triage",
+          "Service & Job Categorization",
+          "Urgency & Emergency Detection",
+          "Advanced Conversational Decision Flows",
+          "Automated Booking & Calendar Workflow",
+          "Direct Lead Routing to Technicians",
+          "Dedicated 30-Day Launch Support"
+        ],
+        ctaText: "Choose Growth",
+        ctaHref: "contact.html?package=growth"
+      },
+      {
+        id: "pro",
+        name: "Pro",
+        badge: "Enterprise & Multi-Crew",
+        setupPrice: "Custom Quote",
+        setupDescription: "Custom scope & multi-territory setup",
+        maintenancePrice: "Tailored",
+        maintenanceNote: "Optional SLA maintenance & ongoing enhancements",
+        description: "Engineered for established multi-van companies wanting end-to-end CRM synchronization and follow-up.",
+        popular: false,
+        features: [
+          "Everything in Growth",
+          "Full CRM Integration (ServiceTitan, HubSpot, etc.)",
+          "Automated Follow-Up Sequences",
+          "Multi-Territory / Multi-Crew Lead Routing",
+          "Custom Operational Workflows",
+          "WhatsApp & SMS Notification Flows",
+          "Dedicated Priority Support & SLA"
+        ],
+        ctaText: "Request Custom Quote",
+        ctaHref: "contact.html?package=pro"
+      }
+    ]
+  },
+
+  // Supabase Configuration
+  // Fill in your project URL and publishable anon key when ready.
+  // The website functions fully as a static site if these are empty.
+  supabase: {
+    enabled: false, // Set to true after adding valid credentials
+    url: "",        // e.g. "https://your-project.supabase.co"
+    anonKey: "",    // Public publishable key only (never service_role)
+    tableName: "leads",
+    storage: {
+      enabled: false,
+      bucketName: "website-images",
+      publicUrlBase: "" // e.g. "https://your-project.supabase.co/storage/v1/object/public/website-images"
+    }
+  },
+
+  // Voiceflow Configuration
+  // When ready to embed your live Voiceflow assistant on demo.html or globally,
+  // set enabled to true and insert your Voiceflow project ID.
+  voiceflow: {
+    enabled: false, // Set to true when ready to load real Voiceflow widget
+    projectID: "",  // Insert your Voiceflow Project ID here
+    versionID: "production"
+  },
+
+  // Make.com Automation Configuration
+  // Optional webhook URL to send incoming website enquiries for automated routing.
+  make: {
+    enabled: false, // Set to true after pasting your Make webhook URL
+    webhookUrl: ""  // e.g. "https://hook.eu1.make.com/your-custom-webhook-id"
+  }
+};
+
+// Freeze configuration in non-development environments to prevent accidental tampering
+if (typeof Object.freeze === "function") {
+  Object.freeze(CONFIG.pricing);
+}
