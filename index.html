@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ServeLinkAI | AI Automation for Home-Service Businesses</title>
+  <meta name="description" content="ServeLinkAI helps home-service contractors capture, qualify, and manage customer enquiries automatically. 24/7 AI Website Receptionist for plumbers, electricians, HVAC & trade businesses.">
+  <link rel="canonical" href="https://www.servelinkai.com/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.servelinkai.com/">
+  <meta property="og:title" content="ServeLinkAI | AI Automation for Home-Service Businesses">
+  <meta property="og:description" content="Turn more website enquiries into qualified leads automatically. Instant 24/7 answers, emergency triage, and lead capture for trade professionals.">
+  <meta property="og:image" content="https://www.servelinkai.com/assets/images/servelinkai-logo.png">
+
+  <!-- Twitter / X Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.servelinkai.com/">
+  <meta name="twitter:title" content="ServeLinkAI | AI Automation for Home-Service Businesses">
+  <meta name="twitter:description" content="Turn more website enquiries into qualified leads automatically. Instant 24/7 answers, emergency triage, and lead capture for trade professionals.">
+  <meta name="twitter:image" content="https://www.servelinkai.com/assets/images/servelinkai-logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- JSON-LD Structured Data: Organization & WebSite & FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.servelinkai.com/#organization",
+        "name": "ServeLinkAI",
+        "url": "https://www.servelinkai.com/",
+        "logo": "https://www.servelinkai.com/assets/images/servelinkai-logo.png",
+        "description": "AI automation and 24/7 website receptionists for home-service contractors and trade businesses."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.servelinkai.com/#website",
+        "url": "https://www.servelinkai.com/",
+        "name": "ServeLinkAI",
+        "publisher": {
+          "@id": "https://www.servelinkai.com/#organization"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does an AI receptionist work for home-service businesses?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ServeLinkAI sits on your website and responds immediately when a customer reaches out. It answers common questions about your services, identifies the customer's location and urgency, collects their contact information, and notifies you or your team right away."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will the AI provide incorrect quotes or make promises we cannot keep?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The assistant is strictly configured around your exact business policies, service areas, and pricing boundaries. If an enquiry requires bespoke assessment, it qualifies the customer and routes it directly to your team for review."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a human take over the conversation whenever necessary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Human handoff is a core component. Whenever a customer requests a call, has an unusual requirement, or faces an emergency, you receive an instant alert with full conversation context so you can step in seamlessly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to pay an expensive monthly software subscription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We operate primarily on a transparent one-time setup model. You pay once for complete setup and configuration. Ongoing monthly maintenance and support are completely optional."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- 1. Sticky Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ServeLinkAI Homepage">
+        <img src="assets/images/servelinkai-logo.png" alt="ServeLinkAI - AI Automation for Home-Service Businesses" class="brand-logo" width="180" height="38">
+      </a>
+
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta-wrap">
+          <a href="demo.html" class="btn btn-primary btn-sm">See Live Demo</a>
+        </div>
+      </nav>
+      <div class="nav-backdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 2. Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag-wrap">
+            <span class="section-tag">AI Automation for Home-Service Businesses</span>
+          </div>
+          <h1 id="hero-title" class="hero-title">
+            Turn More Website Enquiries Into <span class="gradient-text">Qualified Leads</span> — Automatically.
+          </h1>
+          <p class="hero-description">
+            ServeLinkAI helps home-service businesses answer customer questions, qualify enquiries and capture leads while you stay focused on the job.
+          </p>
+          <div class="hero-actions">
+            <a href="demo.html" class="btn btn-primary btn-lg">
+              See Live Demo <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Get Started</a>
+          </div>
+          <div class="hero-reassurance">
+            <div class="reassurance-item">
+              <span class="reassurance-icon" aria-hidden="true">✓</span>
+              <span>24/7 Instant Response</span>
+            </div>
+            <div class="reassurance-item">
+              <span class="reassurance-icon" aria-hidden="true">✓</span>
+              <span>No Complex Software to Learn</span>
+            </div>
+            <div class="reassurance-item">
+              <span class="reassurance-icon" aria-hidden="true">✓</span>
+              <span>One-Time Setup Available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Preview Card -->
+        <div class="hero-visual-card" aria-label="Live AI Receptionist Conversation Preview">
+          <div class="visual-topbar">
+            <div class="topbar-indicators">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="visual-status-pill">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Receptionist Active & Ready</span>
+            </div>
+          </div>
+          <div class="visual-chat-body">
+            <div class="chat-bubble chat-ai">
+              <div class="bubble-avatar" aria-hidden="true">AI</div>
+              <div class="bubble-text">
+                <p>Hello! Welcome to Apex Home Services. Are you looking to schedule a repair or get a quotation today?</p>
+                <span class="bubble-time">8:42 PM</span>
+              </div>
+            </div>
+            <div class="chat-bubble chat-user">
+              <div class="bubble-text">
+                <p>Hi, I have water dripping from the ceiling under the bathroom. Can someone come out tonight?</p>
+                <span class="bubble-time">8:43 PM</span>
+              </div>
+            </div>
+            <div class="chat-bubble chat-ai">
+              <div class="bubble-avatar" aria-hidden="true">AI</div>
+              <div class="bubble-text">
+                <p>I understand this is urgent. We have an on-call emergency plumber in your area. What is your street address or postcode so we can verify arrival time?</p>
+                <span class="bubble-time">8:43 PM</span>
+              </div>
+            </div>
+          </div>
+          <div class="visual-dispatch-box">
+            <div class="dispatch-header">
+              <span>INSTANT TEAM NOTIFICATION</span>
+              <span>HIGH URGENCY</span>
+            </div>
+            <div class="dispatch-detail">
+              Emergency leak detected • Customer in service zone • Phone & address captured for engineer dispatch.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Benefit Strip -->
+    <section class="benefit-strip" aria-label="Core Benefits">
+      <div class="container">
+        <div class="benefit-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon-wrap" aria-hidden="true">⏰</div>
+            <div class="benefit-text">
+              <h3>24/7 Enquiry Handling</h3>
+              <p>Capture evening, weekend, and holiday customer enquiries instantly.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon-wrap" aria-hidden="true">🎯</div>
+            <div class="benefit-text">
+              <h3>Lead Qualification</h3>
+              <p>Collect job type, location, urgency, and project scope upfront.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon-wrap" aria-hidden="true">⚡</div>
+            <div class="benefit-text">
+              <h3>Instant Lead Capture</h3>
+              <p>Save customer details directly so no potential job slips away.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon-wrap" aria-hidden="true">🤝</div>
+            <div class="benefit-text">
+              <h3>Human Handoff</h3>
+              <p>Seamlessly alert your team whenever a personal call is required.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Problem Section -->
+    <section class="section section-alt" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Reality On The Ground</span>
+          <h2 id="problem-title" class="section-title">Why Great Trade Businesses Miss Out On Valuable Jobs</h2>
+          <p class="section-subtitle">
+            When you and your crew are on-site fixing issues and serving customers, answering every website message immediately is practically impossible.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">🌙</div>
+            <h3>Customers Enquire Outside Working Hours</h3>
+            <p>Homeowners often search for trade services after 7 PM, early in the morning, or during weekends when your office phone is unattended.</p>
+            <div class="problem-footer-stat">Outcome: Potential clients call the next contractor on Google.</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">🔧</div>
+            <h3>Staff Are Busy On Jobs</h3>
+            <p>You cannot stop halfway through a boiler install, rewiring job, or roof inspection to answer back-and-forth website messages.</p>
+            <div class="problem-footer-stat">Outcome: Delayed responses lead to cold enquiries.</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">🔁</div>
+            <h3>Repetitive Questions Consume Time</h3>
+            <p>Hours are spent every week answering the same questions about callout areas, standard services, and availability.</p>
+            <div class="problem-footer-stat">Outcome: Valuable office hours lost on repetitive admin.</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">📉</div>
+            <h3>Important Enquiries Can Be Missed</h3>
+            <p>Enquiries submitted through generic static contact forms sit in email inboxes unread for hours or days.</p>
+            <div class="problem-footer-stat">Outcome: High-value urgent jobs lost to faster competitors.</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">📋</div>
+            <h3>Leads May Not Be Properly Qualified</h3>
+            <p>Callers often leave vague messages like "need quote" without specifying location, urgency, or job details, requiring multiple follow-ups.</p>
+            <div class="problem-footer-stat">Outcome: Wasted time chasing unworkable or out-of-area jobs.</div>
+          </div>
+
+          <div class="problem-card">
+            <div class="problem-icon-wrap" aria-hidden="true">🚪</div>
+            <h3>Customers Leave When Not Answered</h3>
+            <p>Modern consumers expect rapid acknowledgement. If a website gives no immediate guidance, they simply click back and look elsewhere.</p>
+            <div class="problem-footer-stat">Outcome: Money spent on advertising or local SEO is wasted.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. How It Works -->
+    <section class="section" aria-labelledby="how-it-works-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simple & Effective</span>
+          <h2 id="how-it-works-title" class="section-title">How ServeLinkAI Handles Your Inbound Traffic</h2>
+          <p class="section-subtitle">
+            A clear four-step process that greets visitors, extracts necessary job facts, and routes ready-to-book opportunities straight to your phone.
+          </p>
+        </div>
+
+        <div class="how-it-works-grid">
+          <div class="step-card">
+            <span class="step-badge">STEP 01</span>
+            <h3>Answer</h3>
+            <p>Visitors receive an immediate, professional greeting within seconds. The assistant answers common queries about services, coverage areas, and booking steps.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-badge">STEP 02</span>
+            <h3>Qualify</h3>
+            <p>The AI gently asks key questions: What is the issue? Is it an active emergency? What is the property address? When is the best time for a visit?</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-badge">STEP 03</span>
+            <h3>Capture</h3>
+            <p>Customer contact details (name, phone number, email, and preferred contact time) are collected and organized into a complete, clean record.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-badge">STEP 04</span>
+            <h3>Route</h3>
+            <p>The qualified enquiry is instantly pushed to your phone, email, or booking schedule with full notes so your team can quote or dispatch immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Live AI Demo Preview (Plumbing Scenario) -->
+    <section class="section section-alt" aria-labelledby="live-demo-preview-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Preview</span>
+          <h2 id="live-demo-preview-title" class="section-title">Experience A Live Plumbing Qualification</h2>
+          <p class="section-subtitle">
+            See how an AI Receptionist handles an urgent homeowner issue in real time—qualifying the problem and preparing a complete dispatch ticket.
+          </p>
+        </div>
+
+        <div id="interactive-demo-widget" class="demo-showcase-box" aria-label="Plumbing Chat Simulation">
+          <div class="demo-tabs-bar">
+            <span class="demo-tab-label">Switch Trade Demo:</span>
+            <button type="button" class="demo-tab-btn active" data-scenario="plumbing" aria-selected="true">Plumbing Demo</button>
+            <button type="button" class="demo-tab-btn" data-scenario="electrical" aria-selected="false">Electrical Demo</button>
+            <button type="button" class="demo-tab-btn" data-scenario="hvac" aria-selected="false">HVAC / Heating Demo</button>
+          </div>
+
+          <div class="demo-dual-grid">
+            <div class="demo-chat-column">
+              <div class="demo-chat-header">
+                <div class="demo-agent-info">
+                  <div class="demo-agent-avatar" aria-hidden="true">AI</div>
+                  <div>
+                    <div class="demo-agent-name">Apex Trade Assistant</div>
+                    <div class="demo-agent-role">24/7 Automated Receptionist</div>
+                  </div>
+                </div>
+                <div class="visual-status-pill">
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                  <span>Online</span>
+                </div>
+              </div>
+
+              <div class="demo-messages" role="log" aria-live="polite">
+                <!-- Messages populated dynamically by demo.js -->
+              </div>
+
+              <div class="demo-chips" aria-label="Suggested Responses">
+                <!-- Chips populated dynamically by demo.js -->
+              </div>
+            </div>
+
+            <div class="demo-summary-column">
+              <div id="demo-lead-card" aria-label="Captured Lead Information">
+                <!-- Lead card populated dynamically by demo.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 36px; text-align: center;">
+          <a href="demo.html" class="btn btn-outline btn-lg">
+            Explore All Trade Demos on the Full Demo Page <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Solutions Overview -->
+    <section class="section" aria-labelledby="solutions-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 id="solutions-title" class="section-title">Built Specially For Home-Service Operations</h2>
+          <p class="section-subtitle">
+            Every feature is designed to solve practical communication bottlenecks faced by trade contractors and service companies.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">💬</div>
+            <h3>AI Website Receptionist</h3>
+            <p>Engage every visitor instantly, answer practical questions about your trade services, and provide round-the-clock availability.</p>
+            <a href="solutions.html#receptionist" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">📋</div>
+            <h3>Lead Capture &amp; Qualification</h3>
+            <p>Filter out tire-kickers and gather critical project parameters—service required, exact postcode, photos, and project urgency.</p>
+            <a href="solutions.html#qualification" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">⚡</div>
+            <h3>Customer Enquiry Automation</h3>
+            <p>Keep prospective clients informed instantly with automated confirmations so they know their job is in safe hands.</p>
+            <a href="solutions.html#enquiry-automation" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">📅</div>
+            <h3>Booking &amp; Routing</h3>
+            <p>Guide qualified leads to choose inspection windows or route emergency jobs directly to the on-call engineer.</p>
+            <a href="solutions.html#booking-routing" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">🗂️</div>
+            <h3>CRM &amp; Follow-Up</h3>
+            <p>Sync clean enquiry records into your spreadsheet or trade software so quotes and follow-ups happen without manual data entry.</p>
+            <a href="solutions.html#crm-followup" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-icon-wrap" aria-hidden="true">⚙️</div>
+            <h3>Custom AI Automation</h3>
+            <p>Tailor conversation flows to match the exact dispatch rules, pricing guidelines, and service boundaries of your business.</p>
+            <a href="solutions.html#custom-automation" class="solution-link">Learn more <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Industries Section -->
+    <section class="section section-alt" aria-labelledby="industries-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Industries We Serve</span>
+          <h2 id="industries-title" class="section-title">Configured For Your Specific Trade</h2>
+          <p class="section-subtitle">
+            Different trades require different questions. We tailor each deployment to the exact terminology and triage steps of your sector.
+          </p>
+        </div>
+
+        <div class="industries-grid">
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">🔧</div>
+            <h3>Plumbing</h3>
+            <p>Triage active burst pipes, boiler error codes, leaking taps, and drain blockages.</p>
+            <span class="industry-example-tag">Active leak detection &amp; location</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">⚡</div>
+            <h3>Electrical</h3>
+            <p>Qualify tripping consumer units, rewiring jobs, EV charger installs, and safety certificates.</p>
+            <span class="industry-example-tag">Power outage &amp; hazard triage</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">❄️</div>
+            <h3>HVAC / Heating &amp; Air</h3>
+            <p>Handle winter no-heat emergencies, summer AC breakdowns, and seasonal maintenance bookings.</p>
+            <span class="industry-example-tag">Brand &amp; error code capture</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">🏠</div>
+            <h3>Roofing</h3>
+            <p>Capture storm damage reports, guttering replacements, tile repairs, and survey requests.</p>
+            <span class="industry-example-tag">Property type &amp; damage urgency</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">🚪</div>
+            <h3>Garage Door Services</h3>
+            <p>Sort snapped cable emergencies, motor repairs, and automated door replacement estimates.</p>
+            <span class="industry-example-tag">Door stuck open / security triage</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">🐜</div>
+            <h3>Pest Control</h3>
+            <p>Identify pest species, property type, infestation signs, and domestic or commercial needs.</p>
+            <span class="industry-example-tag">Urgent infestation qualification</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">✨</div>
+            <h3>Cleaning</h3>
+            <p>Qualify end-of-tenancy cleans, commercial office contracts, and post-construction cleans.</p>
+            <span class="industry-example-tag">Property size &amp; date scheduling</span>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-icon-box" aria-hidden="true">🌿</div>
+            <h3>Landscaping</h3>
+            <p>Handle garden renovation requests, patio installations, tree surgery, and seasonal maintenance.</p>
+            <span class="industry-example-tag">Project scope &amp; budget estimation</span>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="industries.html" class="btn btn-secondary">
+            View All Industry Workflows &amp; Details <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Why ServeLinkAI -->
+    <section class="section" aria-labelledby="why-us-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The ServeLinkAI Difference</span>
+          <h2 id="why-us-title" class="section-title">Built For Results, Not Gimmicks</h2>
+          <p class="section-subtitle">
+            We specialize exclusively in home-service automation. Our systems are built to be robust, practical, and respectful of your reputation.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🎯</div>
+            <h3>Home-Service Specialization</h3>
+            <p>We do not build generic chatbots for e-commerce or SaaS. We focus 100% on the operational realities of plumbers, electricians, and tradespeople.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🛠️</div>
+            <h3>Practical AI</h3>
+            <p>No unnecessary jargon or overcomplicated features. Just straightforward automation that qualifies visitors and collects what you need to price jobs.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🤝</div>
+            <h3>Human Handoff</h3>
+            <p>AI should assist your business, not alienate customers. Clear protocols ensure you or your staff can step into any conversation immediately.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">📐</div>
+            <h3>Custom Workflows</h3>
+            <p>Configured specifically to your coverage zones, service boundaries, callout fees, and appointment schedules.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🚀</div>
+            <h3>Fast Deployment</h3>
+            <p>Get up and running smoothly without disrupting your daily operations. We handle the heavy lifting from setup to testing.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">📈</div>
+            <h3>Outcome-Focused Automation</h3>
+            <p>Success is measured by qualified leads in your inbox and fewer missed calls—not by vanity metrics or buzzwords.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Pricing Preview Section -->
+    <section class="section section-alt" aria-labelledby="pricing-preview-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Straightforward Investment</span>
+          <h2 id="pricing-preview-title" class="section-title">Transparent One-Time Setup Packages</h2>
+          <p class="section-subtitle">
+            You own your setup. Pay once for complete design, training, and deployment. Monthly maintenance is optional, never mandatory.
+          </p>
+        </div>
+
+        <!-- Dynamic pricing cards loaded from js/config.js -->
+        <div class="pricing-grid dynamic-pricing-container">
+          <!-- Fallback cards if JS is delayed -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="badge badge-standard">Essential Launch</span>
+              <h3 class="package-name">Starter</h3>
+              <p class="package-desc">Ideal for solo operators and small trade businesses wanting 24/7 automated enquiry capture.</p>
+            </div>
+            <div class="pricing-setup-block">
+              <div class="pricing-label">Setup Investment</div>
+              <div class="price-value">£XXX</div>
+              <div class="price-type">One-time setup fee</div>
+            </div>
+            <div class="pricing-maintenance-block">
+              <div class="maintenance-label">Optional Monthly Maintenance</div>
+              <div class="maintenance-val">£XX / mo</div>
+              <div class="maintenance-subtext">Optional maintenance &amp; hosting</div>
+            </div>
+            <div class="pricing-footer">
+              <a href="contact.html?package=starter" class="btn btn-secondary btn-block">Choose Starter</a>
+            </div>
+          </div>
+
+          <div class="pricing-card popular-card">
+            <div class="pricing-header">
+              <span class="badge badge-popular">MOST POPULAR</span>
+              <h3 class="package-name">Growth</h3>
+              <p class="package-desc">Built for busy home-service contractors needing smart triage, urgency detection, and job routing.</p>
+            </div>
+            <div class="pricing-setup-block">
+              <div class="pricing-label">Setup Investment</div>
+              <div class="price-value">£XXX</div>
+              <div class="price-type">One-time setup fee</div>
+            </div>
+            <div class="pricing-maintenance-block">
+              <div class="maintenance-label">Optional Monthly Maintenance</div>
+              <div class="maintenance-val">£XX / mo</div>
+              <div class="maintenance-subtext">Optional monthly optimization</div>
+            </div>
+            <div class="pricing-footer">
+              <a href="contact.html?package=growth" class="btn btn-primary btn-block">Choose Growth</a>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="badge badge-standard">Enterprise &amp; Multi-Crew</span>
+              <h3 class="package-name">Pro</h3>
+              <p class="package-desc">Engineered for established multi-van companies wanting end-to-end CRM synchronization.</p>
+            </div>
+            <div class="pricing-setup-block">
+              <div class="pricing-label">Setup Investment</div>
+              <div class="price-value">Custom Quote</div>
+              <div class="price-type">Custom scope &amp; multi-territory</div>
+            </div>
+            <div class="pricing-maintenance-block">
+              <div class="maintenance-label">Optional Monthly Maintenance</div>
+              <div class="maintenance-val">Tailored</div>
+              <div class="maintenance-subtext">Optional SLA maintenance</div>
+            </div>
+            <div class="pricing-footer">
+              <a href="contact.html?package=pro" class="btn btn-secondary btn-block">Request Custom Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="pricing.html" class="btn btn-outline">
+            View Full Package Comparison &amp; Details <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Technology & Integrations -->
+    <section class="section" aria-labelledby="integrations-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Modern &amp; Reliable</span>
+          <h2 id="integrations-title" class="section-title">Seamlessly Connects With Your Existing Tools</h2>
+          <p class="section-subtitle">
+            We connect your AI receptionist directly to the channels and applications your business already relies on every day.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon-wrap" aria-hidden="true">💬</div>
+            <h3>Intelligent Web Receptionist</h3>
+            <p>Trained to understand colloquial homeowner requests and trade terms without confusion.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon-wrap" aria-hidden="true">📧</div>
+            <h3>Instant Notifications</h3>
+            <p>Get instant email or SMS summaries with all customer details the moment a lead finishes qualifying.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon-wrap" aria-hidden="true">📊</div>
+            <h3>Clean Lead Database</h3>
+            <p>Every inbound enquiry is catalogued neatly with location, service required, and contact information.</p>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-icon-wrap" aria-hidden="true">📱</div>
+            <h3>Direct Technician Routing</h3>
+            <p>Urgent emergency notifications can be dispatched directly to your on-call engineer's mobile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Example Use Cases -->
+    <section class="section section-alt" aria-labelledby="use-cases-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Real Scenarios</span>
+          <h2 id="use-cases-title" class="section-title">How ServeLinkAI Handles Real Situations</h2>
+          <p class="section-subtitle">
+            See how the assistant steps in when real customers reach out with different priorities.
+          </p>
+        </div>
+
+        <div class="use-case-grid">
+          <div class="use-case-card">
+            <span class="use-case-badge">Sunday Night Emergency</span>
+            <h3>Burst Pipe Under Bathroom Floor</h3>
+            <div class="use-case-flow">
+              <div class="flow-step"><strong>10:15 PM:</strong> Homeowner discovers ceiling leak and visits plumber's site.</div>
+              <div class="flow-step"><strong>Response:</strong> AI answers immediately, confirms active water leak, and instructs homeowner on main stopcock shutoff.</div>
+              <div class="flow-step"><strong>Lead Capture:</strong> Name, phone, postcode, and emergency callout consent captured.</div>
+            </div>
+            <div class="use-case-outcome">✓ On-call engineer alerted by 10:18 PM with full details.</div>
+          </div>
+
+          <div class="use-case-card">
+            <span class="use-case-badge">Busy Workday Project</span>
+            <h3>EV Home Charger Installation</h3>
+            <div class="use-case-flow">
+              <div class="flow-step"><strong>11:30 AM:</strong> Property owner asks about charging points while electrician is on a ladder.</div>
+              <div class="flow-step"><strong>Response:</strong> AI explains available charger types, checks distance to fuse box, and confirms off-street parking.</div>
+              <div class="flow-step"><strong>Lead Capture:</strong> Contact info and photos requested for desktop survey.</div>
+            </div>
+            <div class="use-case-outcome">✓ Fully qualified quote request waiting for electrician at lunch.</div>
+          </div>
+
+          <div class="use-case-card">
+            <span class="use-case-badge">Winter Heating Outage</span>
+            <h3>No Heat &amp; Frozen Condensate Pipe</h3>
+            <div class="use-case-flow">
+              <div class="flow-step"><strong>6:45 AM:</strong> Young family wakes up to freezing home and boiler error code.</div>
+              <div class="flow-step"><strong>Response:</strong> AI checks boiler model, identifies cold snap priority, and checks if children or vulnerable occupants are present.</div>
+              <div class="flow-step"><strong>Lead Capture:</strong> Contact captured and slotted into morning emergency route.</div>
+            </div>
+            <div class="use-case-outcome">✓ First visit dispatched before regular office lines even open.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Frequently Asked Questions -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know about setting up and running ServeLinkAI for your trade business.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How does an AI website receptionist work for home-service contractors?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                ServeLinkAI is installed directly onto your existing website. When a homeowner arrives and has a question, the assistant immediately greets them, answers standard questions based on your specific rules, asks necessary qualification questions, captures their contact info, and forwards the lead straight to your phone or inbox.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Will the AI give out inaccurate quotes or make promises we cannot fulfill?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Never. The system is programmed strictly according to your guidelines. If a job requires an on-site survey or custom assessment, the assistant clearly informs the customer and collects their project information for your personal review.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can I or my office staff take over a conversation when needed?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Yes. Human handoff is a core principle. If a customer specifically requests to speak with a human or if an urgent situation arises, you receive an immediate alert and can step into the conversation directly.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Is there a mandatory monthly subscription?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                No. We believe in practical, transparent value. We build and deploy your system for a transparent one-time setup fee. Monthly maintenance, continuous prompt updates, and support are entirely optional.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How long does it take to build and launch?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Most home-service setups are completely built, trained with your specific business FAQs, tested for accuracy, and launched within 5 to 10 business days without interrupting your ongoing jobs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Final CTA Section -->
+    <section class="final-cta-section" aria-labelledby="final-cta-title">
+      <div class="container final-cta-box">
+        <h2 id="final-cta-title" class="final-cta-title">
+          Ready to Stop Missing Out on <span class="gradient-text">High-Value Jobs?</span>
+        </h2>
+        <p class="final-cta-desc">
+          Capture and qualify your website enquiries around the clock while you stay focused on delivering great work on-site.
+        </p>
+        <div class="final-cta-actions">
+          <a href="demo.html" class="btn btn-primary btn-lg">
+            See Live Demo <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">
+            Speak With Us About Your Business
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 15. Shared Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-wrap">
+          <a href="index.html" aria-label="ServeLinkAI Home">
+            <img src="assets/images/servelinkai-logo.png" alt="ServeLinkAI Logo" class="footer-brand-logo" width="160" height="34">
+          </a>
+          <p class="footer-tagline">
+            AI Automation for Home-Service Businesses. Helping plumbers, electricians, and trade contractors capture and qualify enquiries automatically.
+          </p>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a href="https://linkedin.com/company/servelinkai" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://x.com/servelinkai" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="solutions.html#receptionist" class="footer-nav-link">AI Website Receptionist</a></li>
+            <li><a href="solutions.html#qualification" class="footer-nav-link">Lead Capture &amp; Qualification</a></li>
+            <li><a href="solutions.html#enquiry-automation" class="footer-nav-link">Enquiry Automation</a></li>
+            <li><a href="solutions.html#booking-routing" class="footer-nav-link">Booking &amp; Routing</a></li>
+            <li><a href="solutions.html#crm-followup" class="footer-nav-link">CRM &amp; Follow-Up</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav-list">
+            <li><a href="solutions.html" class="footer-nav-link">Solutions</a></li>
+            <li><a href="industries.html" class="footer-nav-link">Industries</a></li>
+            <li><a href="pricing.html" class="footer-nav-link">Pricing</a></li>
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+            <li><a href="demo.html" class="footer-nav-link">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-nav-list">
+            <li><a href="privacy.html" class="footer-nav-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-nav-link">Terms &amp; Conditions</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Support &amp; Enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2026</span> ServeLinkAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-nav-link">Privacy</a>
+          <a href="terms.html" class="footer-nav-link">Terms</a>
+          <a href="contact.html" class="footer-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

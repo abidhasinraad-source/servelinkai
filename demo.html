@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live AI Demos | ServeLinkAI - AI Automation for Home-Service Businesses</title>
+  <meta name="description" content="Experience realistic AI receptionist interactions for Plumbing, Electrical, and HVAC contractors. Test live lead qualification, emergency triage, and dispatching.">
+  <link rel="canonical" href="https://www.servelinkai.com/demo.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.servelinkai.com/demo.html">
+  <meta property="og:title" content="Live AI Demos | ServeLinkAI - AI Automation for Home-Service Businesses">
+  <meta property="og:description" content="Interact with live simulations for plumbers, electricians, and HVAC engineers. See how enquiries are qualified into ready-to-book jobs.">
+  <meta property="og:image" content="https://www.servelinkai.com/assets/images/servelinkai-logo.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Live AI Demos | ServeLinkAI - AI Automation for Home-Service Businesses">
+  <meta name="twitter:description" content="Interact with live simulations for plumbers, electricians, and HVAC engineers. See how enquiries are qualified into ready-to-book jobs.">
+  <meta name="twitter:image" content="https://www.servelinkai.com/assets/images/servelinkai-logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="ServeLinkAI Homepage">
+        <img src="assets/images/servelinkai-logo.png" alt="ServeLinkAI Logo" class="brand-logo" width="180" height="38">
+      </a>
+
+      <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta-wrap">
+          <a href="demo.html" class="btn btn-primary btn-sm active">See Live Demo</a>
+        </div>
+      </nav>
+      <div class="nav-backdrop" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="section" style="padding-top: calc(var(--header-height) + 40px); text-align: center;">
+      <div class="container container-narrow">
+        <span class="section-tag">Interactive Trade Simulator</span>
+        <h1 class="section-title">Test Drive Our Trade Receptionists</h1>
+        <p class="section-subtitle">
+          Select a trade scenario below to experience how ServeLinkAI qualifies customer enquiries, detects urgency, and organizes clean lead summaries in real time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Simulation Showcase -->
+    <section class="section section-alt" style="padding-top: 0;">
+      <div class="container">
+        <div id="interactive-demo-widget" class="demo-showcase-box" aria-label="Multi-Trade AI Receptionist Simulator">
+          <!-- Trade Switcher Bar -->
+          <div class="demo-tabs-bar">
+            <span class="demo-tab-label">Select Trade Scenario:</span>
+            <button type="button" class="demo-tab-btn active" data-scenario="plumbing" aria-selected="true">
+              🔧 Plumbing (Emergency Burst Pipe)
+            </button>
+            <button type="button" class="demo-tab-btn" data-scenario="electrical" aria-selected="false">
+              ⚡ Electrical (Tripping Fuse Board)
+            </button>
+            <button type="button" class="demo-tab-btn" data-scenario="hvac" aria-selected="false">
+              ❄️ HVAC / Heating (Boiler Breakdown)
+            </button>
+          </div>
+
+          <div class="demo-dual-grid">
+            <!-- Chat Column -->
+            <div class="demo-chat-column">
+              <div class="demo-chat-header">
+                <div class="demo-agent-info">
+                  <div class="demo-agent-avatar" aria-hidden="true">AI</div>
+                  <div>
+                    <div class="demo-agent-name">ServeLinkAI Trade Assistant</div>
+                    <div class="demo-agent-role">Simulated 24/7 Automated Receptionist</div>
+                  </div>
+                </div>
+                <div class="visual-status-pill">
+                  <span class="pulse-dot" aria-hidden="true"></span>
+                  <span>Interactive Engine Ready</span>
+                </div>
+              </div>
+
+              <!-- Message Stream -->
+              <div class="demo-messages" role="log" aria-live="polite">
+                <!-- Dynamically rendered by js/demo.js -->
+              </div>
+
+              <!-- Clickable Options / Response Chips -->
+              <div class="demo-chips" aria-label="Interactive Options">
+                <!-- Dynamically rendered by js/demo.js -->
+              </div>
+            </div>
+
+            <!-- Real-Time Extracted Lead Record -->
+            <div class="demo-summary-column">
+              <div id="demo-lead-card" aria-label="Live Lead Qualification Data">
+                <!-- Dynamically rendered by js/demo.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voiceflow Embed Integration Zone -->
+        <div id="voiceflow-embed-container" style="margin-top: 56px;">
+          <!-- Loaded dynamically if CONFIG.voiceflow.enabled is true -->
+          <div class="vf-embed-notice">
+            <div class="vf-icon" aria-hidden="true">⚡</div>
+            <h3>External Voiceflow Widget Integration Ready</h3>
+            <p>
+              When you are ready to embed your live Voiceflow assistant on this page or across your website, simply set <code>enabled: true</code> and insert your Voiceflow Project ID into <code>js/config.js</code>. No other code changes are required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why This Workflow Converts -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conversion Science</span>
+          <h2 class="section-title">Why This Converts Better Than Static Forms</h2>
+          <p class="section-subtitle">
+            Most trade websites lose leads because static forms feel like sending a message into a black hole.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">⚡</div>
+            <h3>Zero Delay Friction</h3>
+            <p>Customers are acknowledged within seconds instead of wondering whether anyone actually reads website form submissions.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">🎯</div>
+            <h3>Active Urgency Detection</h3>
+            <p>Emergency jobs are identified instantly and routed with priority alerts, while routine enquiries are scheduled without panic.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon" aria-hidden="true">📱</div>
+            <h3>Clean Dispatch Information</h3>
+            <p>Your team receives complete, structured lead files: verified contact, exact postcode, and clear description of the issue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta-section">
+      <div class="container final-cta-box">
+        <h2 class="final-cta-title">Deploy This Experience For Your Trade</h2>
+        <p class="final-cta-desc">
+          Ready to capture and qualify website visitors 24 hours a day, 7 days a week? Let's configure your custom assistant.
+        </p>
+        <div class="final-cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request Your Setup Proposal</a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">Review Setup Packages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-wrap">
+          <a href="index.html" aria-label="ServeLinkAI Home">
+            <img src="assets/images/servelinkai-logo.png" alt="ServeLinkAI Logo" class="footer-brand-logo" width="160" height="34">
+          </a>
+          <p class="footer-tagline">
+            AI Automation for Home-Service Businesses. Helping trade contractors capture and qualify enquiries automatically.
+          </p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/company/servelinkai" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://x.com/servelinkai" class="social-icon-btn" aria-label="X / Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Solutions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="solutions.html#receptionist" class="footer-nav-link">AI Website Receptionist</a></li>
+            <li><a href="solutions.html#qualification" class="footer-nav-link">Lead Capture &amp; Qualification</a></li>
+            <li><a href="solutions.html#enquiry-automation" class="footer-nav-link">Enquiry Automation</a></li>
+            <li><a href="solutions.html#booking-routing" class="footer-nav-link">Booking &amp; Routing</a></li>
+            <li><a href="solutions.html#crm-followup" class="footer-nav-link">CRM &amp; Follow-Up</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-nav-list">
+            <li><a href="solutions.html" class="footer-nav-link">Solutions</a></li>
+            <li><a href="industries.html" class="footer-nav-link">Industries</a></li>
+            <li><a href="pricing.html" class="footer-nav-link">Pricing</a></li>
+            <li><a href="about.html" class="footer-nav-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+            <li><a href="demo.html" class="footer-nav-link active">Live Demo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-nav-list">
+            <li><a href="privacy.html" class="footer-nav-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-nav-link">Terms &amp; Conditions</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Support &amp; Enquiries</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2026</span> ServeLinkAI. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" class="footer-nav-link">Privacy</a>
+          <a href="terms.html" class="footer-nav-link">Terms</a>
+          <a href="contact.html" class="footer-nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
