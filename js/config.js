@@ -17,21 +17,21 @@ const CONFIG = {
     positioning: "Capture, qualify, and manage customer enquiries automatically.",
     primaryService: "AI Website Receptionist",
     canonicalDomain: "https://www.servelinkai.com",
-    contactEmail: "hello@servelinkai.com", // [Editable Placeholder]
-    phonePlaceholder: "+1 (555) 019-2834", // [Editable Placeholder]
+    contactEmail: "servelinkai@gmail.com", // [Editable Placeholder]
+    phonePlaceholder: "+880 1783-889722", // [Editable Placeholder]
     operatingHours: "24/7 Automation Support",
     logoPath: "assets/images/servelinkai-logo.png",
     socialLinks: {
       linkedin: "https://linkedin.com/company/servelinkai", // [Editable Placeholder]
       twitter: "https://x.com/servelinkai",                 // [Editable Placeholder]
       github: "",
-      facebook: ""
+      facebook: "https://www.facebook.com/profile.php?id=61577540101651"
     }
   },
 
   // Pricing Packages (One-Time Setup + Optional Monthly Maintenance)
   pricing: {
-    currencySymbol: "£",
+    currencySymbol: "€",
     packages: [
       {
         id: "starter",
@@ -39,7 +39,7 @@ const CONFIG = {
         badge: "Essential Launch",
         setupPrice: "€249",
         setupDescription: "One-time setup fee",
-        maintenancePrice: "£99 / mo",
+        maintenancePrice: "€99 / mo",
         maintenanceNote: "Optional monthly maintenance & hosting",
         description: "Ideal for solo operators and small trade businesses wanting 24/7 automated enquiry capture.",
         popular: false,
@@ -61,7 +61,7 @@ const CONFIG = {
         badge: "MOST POPULAR",
         setupPrice: "€399",
         setupDescription: "One-time setup fee",
-        maintenancePrice: "£189 / mo",
+        maintenancePrice: "€189 / mo",
         maintenanceNote: "Optional monthly optimization & maintenance",
         description: "Built for busy home-service contractors needing smart triage, urgency detection, and job routing.",
         popular: true,
