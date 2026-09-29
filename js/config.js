@@ -103,7 +103,7 @@ const CONFIG = {
           "Handles multiple locations or service areas",
           "Custom business-specific automations",
           "Advanced customer support",
-          "Dedicated Priority Support & SLA"
+          "Dedicated Priority Support & SLA",
           "60 days support"
         ],
         ctaText: "Request Custom Quote",
