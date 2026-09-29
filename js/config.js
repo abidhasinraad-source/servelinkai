@@ -39,7 +39,7 @@ const CONFIG = {
         badge: "Essential Launch",
         setupPrice: "€249",
         setupDescription: "One-time setup fee",
-        maintenancePrice: "€99 / mo",
+        maintenancePrice: "€49 / mo",
         maintenanceNote: "Optional monthly maintenance & hosting",
         description: "Ideal for solo operators and small trade businesses wanting 24/7 automated enquiry capture.",
         popular: false,
@@ -64,7 +64,7 @@ const CONFIG = {
         badge: "MOST POPULAR",
         setupPrice: "€399",
         setupDescription: "One-time setup fee",
-        maintenancePrice: "€189 / mo",
+        maintenancePrice: "€79 / mo",
         maintenanceNote: "Optional monthly optimization & maintenance",
         description: "Built for busy home-service contractors needing smart triage, urgency detection, and job routing.",
         popular: true,
@@ -87,9 +87,9 @@ const CONFIG = {
         id: "pro",
         name: "Pro",
         badge: "Enterprise & Multi-Crew",
-        setupPrice: "Custom Quote",
-        setupDescription: "Custom scope & multi-territory setup",
-        maintenancePrice: "Tailored",
+        setupPrice: "€699",
+        setupDescription: "One-time setup fee",
+        maintenancePrice: "€129",
         maintenanceNote: "Optional SLA maintenance & ongoing enhancements",
         description: "Engineered for established multi-van companies wanting end-to-end CRM synchronization and follow-up.",
         popular: false,
@@ -106,7 +106,7 @@ const CONFIG = {
           "Dedicated Priority Support & SLA",
           "60 days support"
         ],
-        ctaText: "Request Custom Quote",
+        ctaText: "Choose Pro",
         ctaHref: "contact.html?package=pro"
       }
     ]
