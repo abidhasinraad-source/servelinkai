@@ -7,23 +7,24 @@
 
 const DemoScenarios = {
   plumbing: {
-    title: "Plumbing Service Demonstration",
-    subtitle: "Emergency Pipe Leak Qualification",
-    initialMessage: "Hello! Welcome to Apex Plumbing & Heating. How can we help you today?",
+  roofing: {
+    title: "Roofing Service Demonstration",
+    subtitle: "Storm Damage & Leak Qualification",
+    initialMessage: "Hello! Welcome to Apex Roofing Solutions. How can we help you today?",
     steps: [
       {
-        userText: "I have a leaking pipe under my kitchen sink.",
-        aiResponse: "I understand how urgent a leak can be. Is the water currently actively leaking or pooling right now?",
-        options: ["Yes, water is actively leaking", "No, it's an intermittent drip", "It's turned off at the isolation valve"]
+        userText: "I have a leak in my roof after last night's storm.",
+        aiResponse: "Sorry to hear that. Is water currently coming through into your ceiling or attic right now?",
+        options: ["Yes, water is actively coming through", "No, but I can see damage from outside", "Not sure, need an inspection"]
       },
       {
-        userText: "Yes, water is actively leaking into the cabinet.",
-        aiResponse: "Got it, that requires priority dispatch. What postcode or town are you located in?",
+        userText: "Yes, water is actively coming through the ceiling.",
+        aiResponse: "That needs priority attention. What postcode or town are you located in?",
         options: ["North London (N1)", "Central Manchester (M1)", "South Birmingham (B15)", "Other Area"]
       },
       {
         userText: "North London (N1 area)",
-        aiResponse: "We have engineers active in that area today. When would you prefer someone to arrive?",
+        aiResponse: "We have roofing engineers active in that area today. When would you prefer someone to arrive?",
         options: ["Immediate emergency callout (within 2 hours)", "This afternoon between 2pm-5pm", "Tomorrow morning"]
       },
       {
@@ -33,21 +34,21 @@ const DemoScenarios = {
       },
       {
         userText: "Sarah Jenkins, 07700 900123, sarah.j@example.com",
-        aiResponse: "Thank you, Sarah. Your emergency enquiry is registered. A priority technician notification has been dispatched to our on-call plumber, and you'll receive a direct confirmation call within 10 minutes.",
+        aiResponse: "Thank you, Sarah. Your emergency enquiry is registered. A priority technician notification has been dispatched to our on-call roofer, and you'll receive a direct confirmation call within 10 minutes.",
         isFinal: true,
         extractedLead: {
           customerName: "Sarah Jenkins",
           phone: "07700 900123",
           email: "sarah.j@example.com",
-          service: "Emergency Plumbing / Pipe Leak",
+          service: "Emergency Roofing / Storm Damage Leak",
           location: "North London (N1)",
-          urgency: "HIGH — Active Water Leak",
-          status: "Qualified & Dispatched to On-Call Engineer"
+          urgency: "HIGH — Active Water Ingress",
+          status: "Qualified & Dispatched to On-Call Roofer"
         }
       }
     ]
   },
-
+    
   electrical: {
     title: "Electrical Service Demonstration",
     subtitle: "Tripping Fuse Board Triage",
@@ -138,7 +139,7 @@ class InteractiveDemo {
     this.container = document.getElementById(containerId);
     if (!this.container) return;
 
-    this.currentScenarioKey = "plumbing";
+    this.currentScenarioKey = "roofing";
     this.currentStepIndex = 0;
     this.chatBody = this.container.querySelector(".demo-messages");
     this.chipContainer = this.container.querySelector(".demo-chips");
