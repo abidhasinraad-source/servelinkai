@@ -89,7 +89,7 @@ const CONFIG = {
         badge: "Enterprise & Multi-Crew",
         setupPrice: "€699",
         setupDescription: "One-time setup fee",
-        maintenancePrice: "€129",
+        maintenancePrice: "€129 / mo",
         maintenanceNote: "Optional SLA maintenance & ongoing enhancements",
         description: "Engineered for established multi-van companies wanting end-to-end CRM synchronization and follow-up.",
         popular: false,
