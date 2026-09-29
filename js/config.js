@@ -47,8 +47,7 @@ const CONFIG = {
           "AI Website Receptionist",
           "FAQ & Business Knowledge Configuration",
           "Basic Lead Capture (Name, Phone, Email, Location)",
-          "Google Sheets / Supabase Lead Collection",
-          "Instant Email Lead Notification",
+          "Google Sheets",
           "Standard Human Handoff Instructions",
           "Basic Launch Support (14 Days)"
         ],
