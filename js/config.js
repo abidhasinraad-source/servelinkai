@@ -29,31 +29,33 @@ const CONFIG = {
     }
   },
 
-  // Pricing Packages (One-Time Setup + Optional Monthly Maintenance)
+   // Pricing Packages (One-Time Setup + Optional Monthly Maintenance)
   pricing: {
     currencySymbol: "€",
     packages: [
       {
         id: "starter",
         name: "Starter",
-        badge: "Essential Launch",
+        badge: "AI Website Receptionist",
         setupPrice: "€249",
         setupDescription: "One-time setup fee",
         maintenancePrice: "€49 / mo",
-        maintenanceNote: "Optional monthly maintenance & hosting",
-        description: "Ideal for solo operators and small trade businesses wanting 24/7 automated enquiry capture.",
+        maintenanceNote: "Optional monitoring, minor updates & AI optimization",
+        description: "For businesses that want to answer customer questions and capture new enquiries automatically.",
         popular: false,
         features: [
-          "24/7 AI customer assistance",
-          "Answers common customer questions",
-          "Provides service and business information",
-          "Collects customer contact details",
-          "Captures new inquiries automatically",
-          "Website chat assistant",
-          "Human support when needed",
-          "Google Sheets lead management",
-          "Basic customization",
-          "Basic Launch Support (14 Days)"
+          "24/7 AI website assistant",
+          "Business & service information",
+          "FAQs & common customer questions",
+          "Trained on your services, policies & service area",
+          "Customer enquiry & lead capture",
+          "Name, phone, email & location collection",
+          "Lead storage & organization",
+          "Google Sheets integration",
+          "Human handoff to your team",
+          "Basic conversation customization",
+          "Website deployment",
+          "14-day post-launch support"
         ],
         ctaText: "Choose Starter",
         ctaHref: "contact.html?package=starter"
@@ -65,20 +67,28 @@ const CONFIG = {
         setupPrice: "€399",
         setupDescription: "One-time setup fee",
         maintenancePrice: "€79 / mo",
-        maintenanceNote: "Optional monthly optimization & maintenance",
-        description: "Built for busy home-service contractors needing smart triage, urgency detection, and job routing.",
+        maintenanceNote: "Optional voice AI monitoring, optimization & workflow updates",
+        description: "For businesses that want to handle both website and phone enquiries and turn them into qualified leads.",
         popular: true,
         features: [
-          "Everything in Starter",
-          "Understands what the customer needs",
-          "Asks the right questions before collecting a lead",
-          "Identifies serious potential customers",
-          "Collects service and project details",
-          "Takes appointment or booking requests",
-          "Sends new lead alerts",
-          "Keeps customer information organized",
-          "Automated customer follow-ups",
-          "Dedicated 30-Day Launch Support"
+          "Everything in Starter, plus:",
+          "AI Voice Receptionist",
+          "24/7 AI phone answering",
+          "Customer call handling",
+          "Voice-based lead capture",
+          "Lead qualification",
+          "Service / job categorization",
+          "Job-specific questions",
+          "Customer need & project detail collection",
+          "Urgency / emergency detection",
+          "Service-area qualification",
+          "Appointment / booking requests",
+          "Automated follow-ups",
+          "Instant team lead notifications",
+          "Advanced conversation flows",
+          "Google Sheets / lead management integration",
+          "Custom business rules",
+          "30-day dedicated post-launch support"
         ],
         ctaText: "Choose Growth",
         ctaHref: "contact.html?package=growth"
@@ -86,32 +96,36 @@ const CONFIG = {
       {
         id: "pro",
         name: "Pro",
-        badge: "Enterprise & Multi-Crew",
+        badge: "AI Front Desk & Business Automation",
         setupPrice: "€699",
         setupDescription: "One-time setup fee",
         maintenancePrice: "€129 / mo",
-        maintenanceNote: "Optional SLA maintenance & ongoing enhancements",
-        description: "Engineered for established multi-van companies wanting end-to-end CRM synchronization and follow-up.",
+        maintenanceNote: "Optional priority support, voice AI optimization & continuous enhancements",
+        description: "For established home-service companies that need a complete AI customer communication system.",
         popular: false,
         features: [
-          "Everything in Growth",
-          "Handles different services separately",
-          "Guides customers through complete conversations",
-          "Handles booking-related questions",
-          "Automatically follows up with potential customers",
-          "Sends customers to the right person or team",
-          "Handles multiple locations or service areas",
-          "Custom business-specific automations",
-          "Advanced customer support",
-          "Dedicated Priority Support & SLA",
-          "60 days support"
+          "Everything in Growth, plus:",
+          "Advanced AI Voice Receptionist",
+          "Advanced multi-service voice conversations",
+          "Multiple service-area / location handling",
+          "Advanced routing to the right team/person",
+          "Custom business-specific workflows",
+          "Booking workflow automation",
+          "CRM integration",
+          "Team SMS / WhatsApp alerts",
+          "Advanced lead management",
+          "Automated customer follow-ups",
+          "Conversation analytics & reporting",
+          "Advanced voice & chat customization",
+          "Custom automation requirements",
+          "Priority support",
+          "60-day post-launch support"
         ],
-        ctaText: "Choose Pro",
+        ctaText: "Request Custom Quote",
         ctaHref: "contact.html?package=pro"
       }
     ]
   },
-
   // Supabase Configuration
   // Fill in your project URL and publishable anon key when ready.
   // The website functions fully as a static site if these are empty.
