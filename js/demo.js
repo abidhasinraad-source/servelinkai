@@ -7,7 +7,6 @@
 
 const DemoScenarios = {
   plumbing: {
-  roofing: {
     title: "Roofing Service Demonstration",
     subtitle: "Storm Damage & Leak Qualification",
     initialMessage: "Hello! Welcome to Apex Roofing Solutions. How can we help you today?",
